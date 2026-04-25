@@ -33,6 +33,8 @@ Simple .jar
 Алгоритм декодирования на Python представлен ниже
 [Решение на Python](solve/solve.py)
 
+[Исходный код задания](src/Main.java)
+
 ## Флаг
 
 `flag{Grea1_f1rs1_TasK_S0lveD}`

@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  pwn1:
+    build: .
+    ports:
+      - "5252:5252"
+    environment:
+      - FLAG=flag{W0w_y0u_Hav3_2_flaG}
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 128M

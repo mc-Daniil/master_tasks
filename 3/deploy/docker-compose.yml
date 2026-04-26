@@ -1,0 +1,19 @@
+services:
+  pwn3:
+    build: .
+    container_name: pwn3
+    ports:
+      - "5225:5225"
+    environment:
+      FLAG: "flag{y0U_s0lv3D_Danissimurr_W000W}"
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=16m
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    pids_limit: 64
+    mem_limit: 64m
+    cpus: "0.5"

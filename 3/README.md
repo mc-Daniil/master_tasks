@@ -46,5 +46,5 @@ docker-compose up --build -d
 
 ## Флаг
 
-`flag{W0w_y0u_Hav3_2_flaG}`
+`flag{y0U_s0lv3D_Danissimurr_W000W}`
 
